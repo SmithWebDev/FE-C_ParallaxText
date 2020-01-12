@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap')
+
+$font: 'Poppins', sans-serif
+
+*
+  margin: 0
+  padding: 0
+  font-family: $font
+  box-sizing: border-box
+  outline: none
+body
+  background: #333333
+
+section
+  position: relative
+  width: 100%
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 50px 0
+  .content
+    text-align: center
+    h2
+      font-size: 24vw
+      text-transform: uppercase
+      font-weight: 900
+      line-height: 1em
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-attachment: fixed
+      background-size: cover
+    p
+      max-width: 800px
+      margin: 0 auto
+      padding: 0 20px
+    a
+      display: inline-block
+      padding: 10px 20px
+      border: 2px solid #000
+      text-decoration: none
+      color: #000000
+      margin-top: 20px
+  &:nth-child(1) .content h2
+    background-image: url(../img/fire.jpg)
+  &:nth-child(2) .content h2
+    background-image: url(../img/water.jpg)
+    background-position: center
+  &:nth-child(3) .content h2
+    background-image: url(../img/sand.jpg)
+  &:nth-child(4) .content h2
+    background-image: url(../img/ice.jpg)
+    // background-position: center center
+
+
+
